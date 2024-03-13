@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // này quy đổi về rem
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Gordita, sans-serif;
+}
