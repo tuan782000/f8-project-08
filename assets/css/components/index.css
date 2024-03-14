@@ -6,7 +6,12 @@
 @media (max-width: 991.98px) {
   .logo {
     gap: 10px;
-    margin-left: 39px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo {
+    margin-left: 0;
   }
 }
 .logo__title {
