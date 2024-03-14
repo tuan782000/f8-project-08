@@ -1,0 +1,23 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+@mixin breakpoint($key) {
+    // map-get là có sẵn trong sass
+    // truy cập vào giá trị "value" của một key trong một map trong SCSS 
+    $breakpoint: map-get($grid-breakpoints, $key);
+    // $key truyền vào lg thì tương ứng 992px
+    // nhưng vẫn phải kiểm tra
+    @if ($breakpoint) {
+        @media (max-width: ($breakpoint - 0.02)) {
+            @content;
+        }
+    } @else {
+        @error "The value #{$key} is not in breakpoints list.";
+    }
+}
