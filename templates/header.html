@@ -3,7 +3,11 @@
     <div class="top-bar">
         <!-- More -->
         <button class="top-bar__more">
-            <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon">
+            <img
+                src="./assets/icons/more.svg"
+                alt=""
+                class="icon top-bar__more-icon"
+            />
         </button>
         <!-- logo -->
         <a href="./" class="logo">
@@ -16,8 +20,8 @@
         </a>
         <!-- Navbar -->
         <nav class="navbar">
-            <ul class="navbar__list">
-                <li>
+            <ul class="navbar__list js-dropdown-list">
+                <li class="navbar__item">
                     <a href="" class="navbar__link">
                         Department
                         <img
@@ -26,8 +30,17 @@
                             class="icon navbar__arrow"
                         />
                     </a>
+                    <div class="dropdown">
+                        <div class="dropdown__inner">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae, quia. Velit, nulla eveniet? Asperiores
+                            ea mollitia et voluptatum obcaecati alias omnis
+                            tempora repudiandae, corporis repellat quibusdam
+                            error distinctio necessitatibus in!
+                        </div>
+                    </div>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="" class="navbar__link">
                         Grocery
                         <img
@@ -37,7 +50,7 @@
                         />
                     </a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="" class="navbar__link">
                         Beauty
                         <img
